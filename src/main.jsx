@@ -1,10 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import 'virtual:uno.css'
+import { Suspense, StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+import 'virtual:uno.css'
+import '@unocss/reset/normalize.css'
+import '@/styles/index.less'
+
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <Suspense fallback="Loading...">
+      <RouterProvider router={router} />
+    </Suspense>
+  </StrictMode>,
 )
