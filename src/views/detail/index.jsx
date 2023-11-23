@@ -5,5 +5,6 @@ const Detail = memo(() => {
     <div>Detail</div>
   )
 })
+Detail.displayName = 'Detail'
 
 export default Detail
