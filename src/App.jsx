@@ -1,12 +1,7 @@
 import { Outlet } from 'react-router-dom'
 
-function App() {
-  const [count, setCount] = useState(3)
-
+export default function App() {
   return (
-    <>
-      <Outlet />
-    </>
+    <Outlet />
   )
 }
-export default App

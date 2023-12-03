@@ -3,9 +3,11 @@ import React, { memo } from 'react'
 const Home = memo(() => {
   return (
     <div>
-      <p font="700" text="pink-500">Home</p>
-    </div >
+      <p className="font-700 text-pink-500">Home</p>
+    </div>
   )
 })
+
+Home.displayName = 'Home'
 
 export default Home

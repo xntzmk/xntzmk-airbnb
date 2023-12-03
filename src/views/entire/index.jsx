@@ -6,4 +6,6 @@ const Entire = memo(() => {
   )
 })
 
+Entire.displayName = 'Entire'
+
 export default Entire

@@ -7,7 +7,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [UnoCSS(), react(), AutoImport({
-    imports: ['react', 'react-router', 'react-router-dom'],
+    imports: ['react', 'react-router-dom'],
   })],
   resolve: {
     alias: {
